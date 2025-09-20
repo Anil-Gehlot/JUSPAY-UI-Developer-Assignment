@@ -1,9 +1,15 @@
+import CoverPage from "./components/cover-page";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+
 function App() {
   return (
-    <div>
-      <h1>UI hiring challenge -- juspay</h1>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<CoverPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
