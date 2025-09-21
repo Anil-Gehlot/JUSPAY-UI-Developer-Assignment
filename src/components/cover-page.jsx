@@ -25,7 +25,7 @@ function CoverPage() {
         />
         <div className="md:pl-[10%] px-4 pt-[100px] md:pt-[141px] flex flex-col justify-center">
           <Link
-            to="/Dashboard"
+            to="/dashboard"
             className="bg-[#ffbb37] hover:underline text-black text-2xl font-light uppercase rounded-[15px] border-2 border-black mb-5 shadow-[10px_10px_0_#555] transition-all duration-500 ease-in-out p-[20px] w-[200px] md:w-[349px] cursor-pointer z-[999] text-center inline-block"
           >
             Assignment

@@ -1,0 +1,126 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 28px;
+  gap: 8px;
+}
+
+.navbar .search {
+  padding: 0 8px;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  width: 90px;
+  height: 20px;
+  outline: none;
+}
+
+.search-box {
+  padding: 0 8px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--hover-main);
+  border-radius: 8px;
+  flex-shrink: 1;
+  min-width: 100px;
+}
+
+.search-icon-box {
+  display: flex;
+  align-items: center;
+}
+
+.nav-buttons {
+  height: 28px;
+  width: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-buttons:hover {
+  background-color: var(--hover-main);
+  transform: scale(1.05);
+}
+
+.nav-buttons:active {
+  transform: scale(0.95);
+  background-color: rgb(200, 200, 200);
+}
+
+.nav-buttons::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.nav-buttons:hover::after {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.nav-right-buttons,
+.nav-right-section,
+.nav-left-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-right-section {
+  gap: 16px;
+}
+
+.nav-text {
+  color: var(--text-low);
+}
+
+@media (max-width: 1080px) {
+  .location-nav {
+    display: none;
+  }
+  .navbar {
+    padding: 0 12px;
+    height: auto;
+    gap: 8px;
+  }
+
+  .search-box {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .nav-left-section {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .nav-buttons {
+    height: 36px;
+    width: 36px;
+  }
+}

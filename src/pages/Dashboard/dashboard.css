@@ -1,0 +1,92 @@
+.main-sections {
+  margin-top: 16px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.dashboard-grid-left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.main-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.dashboard-grid-right {
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.theme-image {
+  height: auto;
+  display: none;
+}
+
+.light-image {
+  display: block;
+}
+
+body.dark .light-image {
+  display: none;
+}
+
+body.dark .dark-image {
+  display: block;
+}
+.projections-vs-actuals-image {
+  height: 252px;
+}
+.revenue-image {
+  width: 100%;
+}
+
+.sales-image .theme-image {
+  border-radius: 16px;
+  width: 269px;
+}
+
+.dashboard-grid-two {
+  display: flex;
+  gap: 28px;
+}
+
+.dashboard-grid-three {
+  display: flex;
+  gap: 28px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.dashboard-grid-right-one {
+  flex: 1 1 0%;
+}
+.dashboard-grid-right-two {
+  width: 272px;
+}
+
+.dashboard-grid-three .dashboard-grid-right {
+  padding: 24px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .dashboard-grid-two {
+    flex-direction: column;
+  }
+  .dashboard-grid-right-two {
+    width: 100%;
+  }
+  .dashboard-grid-three {
+    flex-direction: column;
+  }
+}

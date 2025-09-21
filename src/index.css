@@ -5,3 +5,99 @@
 @theme {
   --font-sans: "Sora", sans-serif;
 }
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1c1c1c;
+  --card-bg: #f7f9fb;
+  --border-color: #1c1c1c1a;
+  --text-low: #1c1c1c66;
+  --input-bg: #ffffff;
+  --input-border: #ddd;
+  --default-style: #1c1c1c;
+  --light-blue: #a8c5da;
+  --light-bg: #e2e8f0;
+  --hover-main: #1c1c1c0d;
+  --chart-image: url("/ProjectionsVsActuals_light.png");
+  font-family: "Inter", sans-serif;
+}
+
+body.dark {
+  --bg-color: #1c1c1c;
+  --text-color: #ffffff;
+  --border-color: #ffffff1a;
+  --text-low: #ffffff66;
+  --card-bg: #ffffff0d;
+  --input-bg: #2a2a2a;
+  --input-border: #555;
+  --default-style: #c6c7f8;
+  --light-blue: #a8c5da;
+  --light-bg: rgba(28, 28, 28, 0.4);
+  --chart-image: url("/ProjectionsVsActuals_dark.png");
+  --hover-main: #ffffff1a;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.icon-set {
+  color: var(--text-color);
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  line-height: normal;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0;
+}
+
+.secondary-heading {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.titles {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.titles-two {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}

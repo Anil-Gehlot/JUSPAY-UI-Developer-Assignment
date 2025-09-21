@@ -1,0 +1,32 @@
+.right-sidebar {
+  min-width: 280px;
+  max-width: 280px;
+  padding: 20px;
+  border-left: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  background-color: var(--bg-color);
+  height: 100dvh;
+}
+
+.title-section {
+  padding: 8px 0 8px 0px;
+  margin-bottom: 8px;
+}
+
+.right-side-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.right-side-description {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-low);
+}
